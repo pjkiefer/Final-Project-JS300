@@ -1,33 +1,141 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.apodTitle{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius:5px;
+  font-size: 2em;
+  color:rgb(29, 64, 73);
+}
+.apodH4{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.apodDateLabel{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:14px;
+  color:rgb(29, 64, 73);
+  padding-right: 25px;
+}
+.apodDateInput{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:14px;
+  color:rgb(29, 64, 73);
+  padding: 5px;
+  border-radius: 5px;
+  width:150px;
+  text-align: center;
+}
+button.apodSearch{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:1em;
+  height: 33px;
+  width:110px;
+  margin-left: 5px;
+}
+.App-p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 70%;
+  display: inline-block;
+  text-align: left;
+  margin: 20px;
+  border: thin solid rgb(29, 64, 73);
+  border-radius:5px;
+  padding: 25px;
+}
+.APOD-p{
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    font-size: 14px;
+    display: inline-block;
+    text-align: left;
+    
+    margin: 10px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    line-height: 1.4;
+    /*border: thin solid rgb(29, 64, 73);
+    border-radius:5px;*/
+    padding: 15px;
+  
+}
+.App-title{
+  width:100%;
+  height: 75px;
+  background-image: url(../src/Images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 75px;
+  color:white;
+  margin-top: -15px;
+  padding-top: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button{
+  background:rgb(29, 64, 73);
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius:5px;
+}
+button:hover{
+  background:#fff;
+  color:rgb(29, 64, 73);
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(29, 64, 73);
+  transition:300ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
-.App-link {
-  color: #61dafb;
+.searchResultDiv{
+  border: thin solid rgb(29, 64, 73);
+  border-radius:5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  width: 150px;
+  height:75px;
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.searchResultDiv:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(85, 141, 187, 0.19);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.apod-iframe-div {
+  display: block;
+  width: 640px;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
 }

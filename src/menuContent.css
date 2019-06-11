@@ -1,0 +1,38 @@
+.menu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+  }
+  
+  
+  
+  .menu-item {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    padding: .7rem 15px;
+    color: black;
+    /*color: inherit;*/
+    text-decoration: none;
+  }
+  
+  .menu-item:hover {
+    color: black;
+    /*color: inherit;*/
+    text-decoration: none;
+    background-color: #eee;
+  }
+  
+  .menu-item:focus {
+    text-decoration: none;
+  }
+  
+  .menu-item:visited {
+    color: inherit;
+  }
+  
+  .active-menu-item {
+    background-color: #e8e8f9;
+  }
+  
+  .hint {
+    padding: .5rem 15px;
+  }
